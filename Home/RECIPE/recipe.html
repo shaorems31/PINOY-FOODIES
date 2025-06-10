@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe | Pinoy Foodies</title>
+  <link rel="stylesheet" href="recipe.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Pinoy Foodies Logo" class="logo" />
+      <h1>Pinoy Foodies</h1>
+      <p class="tagline">Bringing Filipino Flavors to Your Table</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="#" class="active">Recipes</a></li>
+        <li><a href="ABOUT/about.html">About</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+<section class="recipes-section">
+    <p class="recipes-title">Recipes</p>
+    <p class="recipes-description">
+      We’ve organized these recipes every way we could think of so you don't have to! 
+      Dietary restrictions, weeknight dinners, meal prep recipes, some of our most tried-and-true... 
+      no matter how you browse, we’re sure you’ll find just what you were looking for.
+    </p>
+  </section>
+
+<h2>Top Categories</h2>
+  <div class="categories">
+    <a href="#" class="category" id="chickenCategory">
+      <div class="category-icon"><img src="chicken.png" alt="Chicken"></div>
+      <div class="category-label">Chicken</div>
+    </a>
+    <a href="#" class="category" id="porkCategory">
+      <div class="category-icon"><img src="pork.png" alt="Pork"></div>
+      <div class="category-label">Pork</div>
+    </a>
+    <a href="#" class="category" id="beefCategory">
+      <div class="category-icon"><img src="beef.png" alt="Beef"></div>
+      <div class="category-label">Beef</div>
+    </a>
+    <a href="#" class="category" id="fishCategory">
+      <div class="category-icon"><img src="fish.png" alt="Fish"></div>
+      <div class="category-label">Fish</div>
+    </a>
+    <a href="#" class="category" id="dessertCategory">
+      <div class="category-icon"><img src="dessert.png" alt="Dessert"></div>
+      <div class="category-label">Dessert</div>
+    </a>
+    <a href="#" class="category" id="vegetableCategory">
+      <div class="category-icon"><img src="vegetable.png" alt="Vegetable"></div>
+      <div class="category-label">Vegetable</div>
+    </a>
+    <a href="#" class="category" id="pastaCategory">
+      <div class="category-icon"><img src="pasta.png" alt="Pasta"></div>
+      <div class="category-label">Pasta</div>
+    </a>
+    <a href="#" class="category" id="healthCategory">
+      <div class="category-icon"><img src="health.png" alt="Food & Health"></div>
+      <div class="category-label">Food & Health</div>
+    </a>
+  </div>
+
+  <div id="dishContainer" class="dish-container" style="display: none;">
+    <h3 id="dishTitle"></h3>
+    <div class="dish-buttons" id="dishButtons"></div>
+  </div>
+
+  <div id="recipeBox" class="recipe-box" style="display: none;"></div>
+<br><br><br>
+
+    <div class="signup-container">
+    <div class="signup-text">
+      Get New Filipino Recipes<br />
+      Straight To Your Inbox!
+    </div>
+
+    <form class="signup-form" onsubmit="return validateForm()">
+      <div class="form-row">
+        <input type="text" id="name" placeholder="name..." />
+        <input type="email" id="email" placeholder="email address..." />
+        <button type="submit" class="signup-button">JOIN NOW!</button>
+      </div>
+      <label class="consent">
+        <input type="checkbox" id="consent" />
+        I consent to receive emails from Pinoy Foodies <span class="required">*</span>
+      </label>
+    </form>
+  </div>
+
+  <div class="follow-section">
+    <h4>Follow Us On:</h4>
+    <div class="social-links">
+      <a href="#"><img src="ig.png" alt="Instagram">Instagram</a>
+      <a href="#"><img src="fb.png" alt="Facebook">Facebook</a>
+      <a href="#"><img src="p.png" alt="Pinterest">Pinterest</a>
+      <a href="#"><img src="yt.png" alt="YouTube">YouTube</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Pinoy Foodies | All rights reserved
+  </footer>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          style="position: fixed; bottom: 20px; right: 20px; padding: 5px; border: none; background: none; cursor: pointer;">
+    <img src="arrow.png" alt="Back to Top" style="width: 50px; height: 50px;">
+  </button>
+
+  <script src="recipe.js"></script>
+</body>
+</html>
+

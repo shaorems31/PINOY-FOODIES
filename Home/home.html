@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Pinoy Foodies</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Pinoy Foodies Logo" class="logo" />
+      <div>
+        <h1>Pinoy Foodies</h1>
+        <p class="tagline">Bringing Filipino Flavors to Your Table</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="RECIPE/recipe.html">Recipes</a></li>
+        <li><a href="RECIPE/ABOUT/about.html">About</a></li>
+        
+      </ul>
+      
+
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="recipe-sections">
+      <h2>Select a Food Category</h2>
+      <div class="simple-recipes">
+        
+        <div class="recipe-thumb">
+          <img src="pandesal.jpg" alt="Breakfast" onclick="showBreakfastIntro()" />
+          <div class="dish-name">Breakfast</div>
+        </div>
+        <div class="recipe-thumb">
+          <img src="pakbet.jpg" alt="Lunch" onclick="showLunchIntro()" />
+          <div class="dish-name">Lunch</div>
+        </div>
+        <div class="recipe-thumb">
+          <img src="tinola.jpg" alt="Dinner" onclick="showDinnerIntro()" />
+          <div class="dish-name">Dinner</div>
+        </div>
+        <div class="recipe-thumb">
+          <img src="halo-halo.jpg" alt="Desserts" onclick="showDessertIntro()" />
+          <div class="dish-name">Desserts</div>
+        </div>
+      </div>
+  
+      <div id="breakfastIntro" class="intro-section" style="display:none; margin-top: 20px;">
+        <h3>Welcome to Our Filipino Breakfast Corner! 🌞🍽️</h3>
+        <p>Good morning and mabuhay! We’re so glad you’re here. Start your day the Filipino way with our hearty and flavorful breakfast recipes! 🇵🇭</p>
+        <p>From the comforting taste of silog meals like Tapsilog and Tocilog, to warm rice porridge like Arroz Caldo, we’ve got a delicious variety waiting just for you.</p>
+        <p>Whether you're craving something savory, sweet, or a little bit of both, our breakfast dishes are sure to satisfy your taste buds and bring the warmth of a traditional Filipino morning to your home. Dive in and discover recipes that are simple, satisfying, and absolutely delicious! 🥚🍚🍓</p>
+        <p>Let’s make your mornings brighter—one bite at a time!</p>
+      </div>
+      <div id="breakfastDishes" class="recipe-gallery" style="display:none; margin-top: 20px;">
+
+        <div class="recipe-card">
+          <img src="images/tapsilog.jpg" alt="Tapsilog">
+          <h3>Tapsilog</h3>
+          <p>A classic Filipino breakfast with tapa (cured beef), sinangag (garlic rice), and itlog (egg).</p>
+          <button class="toggle-btn" onclick="toggleRecipe('tapsilogRecipe')">View Recipe</button>
+          <div class="recipe-details" id="tapsilogRecipe" style="display: none; margin-top: 10px;">
+            <p><strong>Intro:</strong> Tapsilog is a classic Filipino breakfast combining savory beef tapa, garlic fried rice (sinangag), and a sunny-side-up egg (itlog). It’s a filling and flavorful meal loved for its simplicity and satisfying taste.</p>
+            <h4>Ingredients:</h4>
+            <ul>
+              <li>1 lb beef sirloin, thinly sliced</li>
+              <li>1/4 cup soy sauce</li>
+              <li>1 tbsp calamansi juice or lemon juice</li>
+              <li>4 cloves garlic, minced</li>
+              <li>1 tbsp sugar</li>
+              <li>1/2 tsp ground black pepper</li>
+              <li>Cooked garlic fried rice (sinangag)</li>
+              <li>Fried eggs (1 per serving)</li>
+              <li>Cooking oil</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+              <li>Marinate the beef in soy sauce, calamansi juice, garlic, sugar, and pepper for at least 4 hours or overnight.</li>
+              <li>Heat oil in a pan and pan-fry the marinated beef until browned and cooked through.</li>
+              <li>Prepare garlic fried rice and fry eggs to your liking.</li>
+              <li>Plate everything together and serve hot.</li>
+            </ol>
+            <p><strong>Nutrition Info:</strong> Approx. 500-600 kcal per serving</p>
+            <p><strong>Pro Tip:</strong> For extra flavor, add a vinegar dipping sauce on the side.</p>
+          </div>
+        </div>
+      
+
+        <div class="recipe-card">
+          <img src="images/tocilog.jpg" alt="Tocilog">
+          <h3>Tocilog</h3>
+          <p>Sweet cured pork (tocino) served with garlic rice and a sunny-side-up egg.</p>
+          <button class="toggle-btn" onclick="toggleRecipe('tocilogRecipe')">View Recipe</button>
+          <div class="recipe-details" id="tocilogRecipe" style="display: none; margin-top: 10px;">
+            <p><strong>Intro:</strong> Tocilog is a beloved Filipino breakfast dish consisting of tocino (sweet cured pork), sinangag (garlic rice), and itlog (fried egg). It’s a perfect blend of sweet, savory, and hearty flavors.</p>
+            <h4>Ingredients:</h4>
+            <ul>
+              <li>1 lb tocino (store-bought or homemade)</li>
+              <li>Cooked garlic fried rice (sinangag)</li>
+              <li>Fried eggs (1 per serving)</li>
+              <li>Water (for cooking tocino)</li>
+              <li>Cooking oil</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+              <li>Place tocino in a pan with a bit of water and cook until water evaporates.</li>
+              <li>Once dry, add oil and pan-fry the tocino until caramelized.</li>
+              <li>Prepare garlic rice and fry eggs.</li>
+              <li>Serve together on a plate and enjoy!</li>
+            </ol>
+            <p><strong>Nutrition Info:</strong> Approx. 550 kcal per serving</p>
+            <p><strong>Pro Tip:</strong> Add pickled papaya (atchara) on the side to balance the sweetness.</p>
+          </div>
+        </div>
+      
+
+        <div class="recipe-card">
+          <img src="images/pandesal.jpg" alt="Pandesal">
+          <h3>Pandesal</h3>
+          <p>Soft and slightly sweet bread rolls, perfect with coffee or cheese spread.</p>
+          <button class="toggle-btn" onclick="toggleRecipe('pandesalRecipe')">View Recipe</button>
+          <div class="recipe-details" id="pandesalRecipe" style="display: none; margin-top: 10px;">
+            <p><strong>Intro:</strong> Pandesal is the quintessential Filipino bread roll—soft, slightly sweet, and coated with breadcrumbs. It’s a staple in Filipino households, often enjoyed for breakfast or merienda.</p>
+            <h4>Ingredients:</h4>
+            <ul>
+              <li>4 cups all-purpose flour</li>
+              <li>2¼ tsp active dry yeast</li>
+              <li>1 cup warm milk</li>
+              <li>¼ cup sugar</li>
+              <li>1 tsp salt</li>
+              <li>¼ cup vegetable oil or butter</li>
+              <li>Breadcrumbs for coating</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+              <li>Dissolve yeast in warm milk with a pinch of sugar. Let it foam (5-10 mins).</li>
+              <li>Combine all ingredients into a dough and knead until smooth.</li>
+              <li>Let the dough rise for 1–1.5 hours until doubled.</li>
+              <li>Shape into small rolls, coat in breadcrumbs, and let rise again (30 mins).</li>
+              <li>Bake at 350°F (175°C) for 15–20 minutes until golden brown.</li>
+            </ol>
+            <p><strong>Nutrition Info:</strong> Approx. 150–180 kcal per roll</p>
+            <p><strong>Pro Tip:</strong> Serve warm with butter, cheese, or dipped in hot coffee!</p>
+          </div>
+        </div>
+      </div>
+      
+      
+  
+      <div id="lunchIntro" class="intro-section" style="display:none; margin-top: 20px;">
+        <h3>Welcome to Our Filipino Lunch Corner! 🍛☀️</h3>
+        <p>It’s lunchtime and time to feast! Discover our collection of hearty and mouthwatering Filipino lunch dishes that keep you going throughout the day. 🇵🇭</p>
+        <p>From Adobo’s savory goodness to Sinigang’s tangy comfort, and colorful veggie-packed Pinakbet, we offer flavors that fuel your afternoon adventures.</p>
+        <p>Each dish is steeped in tradition and made to bring a sense of home to your plate. These meals are perfect for sharing with family or enjoying solo with joy. 🍲🥖🥬</p>
+        <p>Dig into the vibrant flavors of Filipino lunch and make every bite count!</p>
+      </div>
+      <div id="lunchDishes" class="recipe-gallery" style="display:none; margin-top: 20px;"></div>
+  
+      <div id="dinnerIntro" class="intro-section" style="display:none; margin-top: 20px;">
+        <h3>Welcome to Our Filipino Dinner Corner! 🌙🍽️</h3>
+        <p>Wind down with heartwarming Filipino dinner dishes that bring families together at the end of a busy day. 🇵🇭</p>
+        <p>From the soothing Tinola to the rich flavors of Kare-Kare and the savory bite of Bistek Tagalog, our dinner recipes offer a cozy culinary hug.</p>
+        <p>These meals are perfect for comfort, connection, and a touch of Filipino pride on your dinner table. 🍛🥩🍜</p>
+        <p>End your day with love and flavor—Filipino style!</p>
+      </div>
+      <div id="dinnerDishes" class="recipe-gallery" style="display:none; margin-top: 20px;"></div>
+  
+      <div id="dessertIntro" class="intro-section" style="display:none; margin-top: 20px;">
+        <h3>Welcome to Our Filipino Dessert Corner! 🍮🍧</h3>
+        <p>Sweeten your day the Filipino way! Our dessert corner features classic and beloved treats that bring smiles and nostalgia in every bite. 🇵🇭</p>
+        <p>From the iconic Halo-Halo to creamy Leche Flan and festive Bibingka, each dessert is a celebration of Filipino culture and creativity.</p>
+        <p>Whether after a meal or just a little merienda treat, these desserts offer a delicious way to indulge and celebrate. 🍨🎂🥥</p>
+        <p>Come explore these sweet wonders that make every moment special!</p>
+      </div>
+      <div id="dessertDishes" class="recipe-gallery" style="display:none; margin-top: 20px;"></div>
+  
+    </section>
+    
+  </main>
+  
+  
+
+  <div class="signup-container">
+    <div class="signup-text">
+      Get New Filipino Recipes<br />
+      Straight To Your Inbox!
+    </div>
+    <form class="signup-form" onsubmit="return validateForm()">
+      <div class="form-row">
+        <input type="text" id="name" placeholder="name..." />
+        <input type="email" id="email" placeholder="email address..." />
+        <button type="submit" class="signup-button">JOIN NOW!</button>
+      </div>
+      <label class="consent">
+        <input type="checkbox" id="consent" />
+        I consent to receive emails from Pinoy Foodies <span class="required">*</span>
+      </label>
+    </form>
+  </div>
+
+  <div class="follow-section">
+    <h4>Follow Us On:</h4>
+    <div class="social-links">
+      <a href="#"><img src="ig.png" alt="Instagram">Instagram</a>
+      <a href="#"><img src="fb.png" alt="Facebook">Facebook</a>
+      <a href="#"><img src="p.png" alt="Pinterest">Pinterest</a>
+      <a href="#"><img src="yt.png" alt="YouTube">YouTube</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Pinoy Foodies | All rights reserved
+  </footer>
+
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          style="position: fixed; bottom: 20px; right: 20px; padding: 5px; border: none; background: none; cursor: pointer;">
+    <img src="arroww.png" alt="Back to Top" style="width: 50px; height: 50px;">
+  </button>
+
+  <script>
+function hideAllSections() {
+    const sections = [
+      'breakfastIntro', 'lunchIntro', 'dinnerIntro', 'dessertIntro',
+      'breakfastDishes', 'lunchDishes', 'dinnerDishes', 'dessertDishes'
+    ];
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+  }
+
+  function showBreakfastIntro() {
+    hideAllSections();
+    document.getElementById('breakfastIntro').style.display = 'block';
+    document.getElementById('breakfastDishes').style.display = 'flex';
+    document.getElementById('breakfastIntro').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function showLunchIntro() {
+    hideAllSections();
+    document.getElementById('lunchIntro').style.display = 'block';
+    document.getElementById('lunchDishes').style.display = 'flex';
+    document.getElementById('lunchIntro').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function showDinnerIntro() {
+    hideAllSections();
+    document.getElementById('dinnerIntro').style.display = 'block';
+    document.getElementById('dinnerDishes').style.display = 'flex';
+    document.getElementById('dinnerIntro').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function showDessertIntro() {
+    hideAllSections();
+    document.getElementById('dessertIntro').style.display = 'block';
+    document.getElementById('dessertDishes').style.display = 'flex';
+    document.getElementById('dessertIntro').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function toggleRecipe(id) {
+    const el = document.getElementById(id);
+    if (el.style.display === 'none' || el.style.display === '') {
+      el.style.display = 'block';
+    } else {
+      el.style.display = 'none';
+    }
+  }
+  </script>
+  <script src="home.js"></script>
+</body>
+</html>
