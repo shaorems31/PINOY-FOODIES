@@ -1,3 +1,5 @@
+Try AI directly in your favorite apps … Use Gemini to generate drafts and refine content, plus get Gemini Pro with access to Google's next-gen AI for ₱1,100.00 ₱0 for 1 month
+recipe.css
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -52,6 +54,22 @@ h1 {
   object-fit: contain;
 }
 
+.logo {
+  animation: slideInLeft 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .about-container {
   padding: 40px 20px;
   max-width: 800px;
@@ -104,7 +122,7 @@ h1 {
 }
 
 .recipes-section {
-  background-color: #f07c62;
+  background-color: #b22222;
   color: #f2f2f2;
   text-align: center;
   padding: 60px 20px;
@@ -173,6 +191,25 @@ h1 {
   font-size: 1rem;
 }
 
+.category-icon {
+  animation: bounceIn 1s ease forwards;
+  opacity: 100;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .dish-container {
   text-align: center;
   margin: 40px auto;
@@ -214,6 +251,22 @@ h1 {
   color: #b22222;
 }
 
+.dish-btn {
+  animation: fadeZoomIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .recipe-box {
   background-color: #fff8f0;
   border: 2px solid #f4a261;
@@ -238,6 +291,22 @@ h1 {
 
 .recipe-box li {
   margin-bottom: 8px;
+}
+
+.recipes-section {
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .signup-container {
@@ -277,8 +346,8 @@ input[type="email"] {
   font-size: 1rem;
   border: 2px solid #222;
   border-radius: 5px;
-  width: 40%;
   min-width: 40%;
+  width: 40%;
 }
 
 .signup-button {
@@ -376,6 +445,20 @@ footer {
 
 .footer-content a:hover {
   color: #ffffff;
+}
+
+footer {
+  animation: fadeInFooter 2s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {

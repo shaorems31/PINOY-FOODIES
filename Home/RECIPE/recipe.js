@@ -1,3 +1,5 @@
+Try AI directly in your favorite apps … Use Gemini to generate drafts and refine content, plus get Gemini Pro with access to Google's next-gen AI for ₱1,100.00 ₱0 for 1 month
+recipe.js
 const recipes = {
   chicken: [
     {
@@ -260,6 +262,26 @@ function showRecipe(category, dishId) {
     <ul>${dish.procedure.map(p => `<li>${p}</li>`).join("")}</ul>
   `;
   recipeBox.style.display = "block";
+}
+
+let currentVisibleRecipeId = null;
+
+function showRecipe(category, dishId) {
+  if (currentVisibleRecipeId === dishId) {
+    recipeBox.style.display = recipeBox.style.display === "block" ? "none" : "block";
+    return;
+  }
+
+  const dish = recipes[category].find(d => d.id === dishId);
+  recipeBox.innerHTML = `
+    <h4>${dish.name}</h4>
+    <strong>Ingredients:</strong>
+    <ul>${dish.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
+    <strong>Procedure:</strong>
+    <ul>${dish.procedure.map(p => `<li>${p}</li>`).join("")}</ul>
+  `;
+  recipeBox.style.display = "block";
+  currentVisibleRecipeId = dishId;
 }
 
 Object.keys(recipes).forEach(category => {
